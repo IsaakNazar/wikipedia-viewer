@@ -1,0 +1,116 @@
+html {
+	width:100%;
+	height:100%;
+	padding:0;
+	margin:0;
+}
+body {
+  height: auto;
+ background-image: url("http://res.cloudinary.com/nazarisaak/image/upload/v1510727832/wood-wall-1380_x2utka.jpg");
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+h1 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #e1e2e8;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.icon {
+	text-align: center;
+	margin: 10% 0;
+}
+.icon i {
+	color: rgba(250, 250, 250, 0.5);
+	transition: color .2s ease-in-out;
+}
+.icon i:hover {
+	color: rgba(250, 250, 250, 0.7);
+}
+.container {
+  position: relative;
+  margin: auto;
+  display: block;
+  height: 100%;
+  width: 550px;
+}
+a {
+  color: #cce0e7;
+  font-size: 20px;
+  text-decoration: none;
+}
+.links {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 20px;
+  font-family: 'Quicksand', sans-serif;
+  transition: background-color  0.3s ease-in-out;
+}
+.links:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.alias {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+#wikitext {
+  min-height: 25px;
+  min-width: 150px;
+  height: 35px;
+  width: 55%;
+  border: 1px solid #d2d4dd;
+  background: black;
+  border-radius: 15px;
+  color: white;
+  text-indent: 10px;
+  outline: none;
+	font-size: 18px;
+}
+
+#btn, #random_btn {
+  height: 39px;
+  width: 100px;
+  border-radius: 15px;
+  border: 1px solid black;
+  outline: none;
+  margin-left: 5px;
+	font-size: 18px;
+}
+#btn:hover, #random_btn:hover {
+  cursor: pointer;
+  color: white;
+  background: black;
+  border: 1px solid #d2d4dd;
+}
+#btn:active, #random_btn:active {
+  background: #9cd8d8;
+}
+form {
+	display: flex;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+	.container {
+	  width: 80%;
+	}
+	form {
+		width: 100%;
+    flex-direction: column;
+  }
+	#wikitext {
+		width: auto;
+	}
+  button {
+		margin-top: 5px;
+    width: 49%;
+    box-sizing: border-box;
+  }
+
+}
